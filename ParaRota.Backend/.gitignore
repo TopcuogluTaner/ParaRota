@@ -1,0 +1,31 @@
+## .NET
+bin/
+obj/
+out/
+*.user
+*.suo
+*.userprefs
+*.swp
+*.dll.config
+
+## Rider / VS / VS Code
+.idea/
+.vs/
+.vscode/
+
+## Build outputs
+**/Properties/launchSettings.json
+*.pdb
+*.cache
+
+## OS
+.DS_Store
+Thumbs.db
+
+## Local config (Override secrets without committing)
+**/appsettings.Local.json
+**/appsettings.*.Local.json
+
+## EF migration build artifacts
+*.dbmdl
+*.dbproj.schemaview

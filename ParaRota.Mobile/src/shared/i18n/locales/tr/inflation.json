@@ -1,0 +1,21 @@
+{
+  "title": "Paranın Değeri",
+  "eyebrow": "TÜFE · 2003=100",
+  "amountLabel": "Tutar",
+  "fromLabel": "Hangi tarihteydi",
+  "toLabel": "Neye göre",
+  "toToday": "Bugün",
+  "toCustom": "Özel tarih",
+  "calculate": "Hesapla",
+  "liveHint": "Tarihi veya tutarı değiştir, sonuç anında güncellenir.",
+  "emptyTitle": "Sonuç burada belirecek",
+  "emptyHint": "Bir tutar yaz ve başlangıç tarihini seç.",
+  "result_eyebrow": "Eşdeğer tutar",
+  "result_caption": "{{from}} · {{amount}}  →  {{to}}",
+  "result_input": "Girilen tutar · {{date}}",
+  "result_cumulative": "Toplam enflasyon",
+  "result_annual": "Yıllık ortalama",
+  "result_multiplier": "Değer çarpanı",
+  "provisionalWarning": "Seçtiğin bitiş ayı henüz açıklanmadı; en son {{date}} verisi kullanıldı.",
+  "source": "Kaynak: TÜİK / TCMB EVDS · TÜFE (2003=100). Yayın birkaç ay gecikebilir."
+}

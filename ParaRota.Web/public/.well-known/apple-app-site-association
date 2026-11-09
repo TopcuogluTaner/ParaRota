@@ -1,0 +1,14 @@
+{
+  "applinks": {
+    "apps": [],
+    "details": [
+      {
+        "appIDs": ["74NNN5WVP7.com.pararotam.mobile"],
+        "components": [
+          { "/": "/accept-invite", "comment": "Aile daveti — uygulamada aç" },
+          { "/": "/accept-invite/*", "comment": "Aile daveti (alt yol)" }
+        ]
+      }
+    ]
+  }
+}

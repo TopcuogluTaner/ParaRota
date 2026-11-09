@@ -1,0 +1,6 @@
+@ParaRota.WebApi_HostAddress = http://localhost:5133
+
+GET {{ParaRota.WebApi_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

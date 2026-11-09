@@ -1,0 +1,21 @@
+{
+  "page_eyebrow": "Tools built for Turkey",
+  "page_title": "Calculators",
+  "page_description": "From salary to rent, severance to inflation; the calculations you need, in one place.",
+  "open": "Open",
+  "payroll_title": "Salary",
+  "payroll_sub": "Net take-home from gross salary and the cost to the employer.",
+  "payroll_tag": "gross→net",
+  "severance_title": "Severance & Notice",
+  "severance_sub": "Severance and notice pay based on length of service.",
+  "severance_tag": "severance",
+  "rent_title": "Rent Increase",
+  "rent_sub": "Legal maximum rent increase — 12-month CPI average (Turkish Code of Obligations art. 344).",
+  "rent_tag": "law art. 344",
+  "inflation_title": "Money's Value",
+  "inflation_sub": "Today's purchasing power of a past amount.",
+  "inflation_tag": "CPI",
+  "loan_title": "Loan Cost",
+  "loan_sub": "Real cost and annual rate including interest + KKDF + BSMV.",
+  "loan_tag": "KKDF+BSMV"
+}

@@ -1,0 +1,28 @@
+# Cloudflare Workers/Pages static-asset cache kuralları.
+# Amaç: yeni deploy çıktığında tarayıcı ANINDA taze HTML + config + sürüm
+# dosyasını çeksin; içeriği hash'li (parmak izli) asset'ler ise uzun cache'lensin.
+
+# HTML kabuğu — asla cache'leme (yeni hash'li bundle referanslarını her zaman taze al)
+/
+  Cache-Control: no-cache, must-revalidate
+/index.html
+  Cache-Control: no-cache, must-revalidate
+
+# Runtime config + sürüm damgası — asla cache'leme
+/appsettings.json
+  Cache-Control: no-cache, must-revalidate
+/version.json
+  Cache-Control: no-cache, must-revalidate
+
+# Vite parmak izli (hash'li) asset'ler — değişmez, 1 yıl cache + immutable
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
+
+# Apple Universal Links — AASA uzantısız dosya; iOS application/json bekler.
+/.well-known/apple-app-site-association
+  Content-Type: application/json
+  Cache-Control: no-cache, must-revalidate
+# Android App Links
+/.well-known/assetlinks.json
+  Content-Type: application/json
+  Cache-Control: no-cache, must-revalidate

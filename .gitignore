@@ -1,0 +1,119 @@
+# ──────────────────────────────────────────────────────────────
+# OS
+# ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ──────────────────────────────────────────────────────────────
+# Claude Code workspace state
+# ──────────────────────────────────────────────────────────────
+.claude/
+
+# ──────────────────────────────────────────────────────────────
+# Node / Vite / React (ParaRota.Web)
+# ──────────────────────────────────────────────────────────────
+node_modules/
+dist/
+dist-ssr/
+build/
+.vite/
+.turbo/
+.next/
+.cache/
+coverage/
+*.local
+
+# Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+*.log
+
+# ──────────────────────────────────────────────────────────────
+# .NET (ParaRota.Backend)
+# ──────────────────────────────────────────────────────────────
+bin/
+obj/
+# EF/MSBuild araçları bazen ters-bölü içeren literal isimle artefakt üretiyor
+# (ör. "bin\Debug/") — standart bin/ kuralı bunu yakalamaz, ayrıca ele alınır.
+bin\\Debug/
+bin\\Release/
+**/BuildHost-*/
+[Dd]ebug/
+[Rr]elease/
+x64/
+x86/
+[Ww][Ii][Nn]32/
+[Aa][Rr][Mm]/
+[Aa][Rr][Mm]64/
+[Bb]ld/
+[Ll]og/
+[Ll]ogs/
+
+# Build results
+*.dll
+*.exe
+*.pdb
+*.cache
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Visual Studio cache
+.vs/
+
+# JetBrains Rider
+.idea/
+*.sln.iml
+
+# NuGet
+*.nupkg
+*.snupkg
+**/[Pp]ackages/*
+!**/[Pp]ackages/build/
+*.nuget.props
+*.nuget.targets
+
+# EF Core / database
+*.mdf
+*.ldf
+
+# Test results
+[Tt]est[Rr]esult*/
+[Bb]uild[Ll]og.*
+*.VisualState.xml
+TestResult.xml
+
+# ──────────────────────────────────────────────────────────────
+# Secrets / env
+# ──────────────────────────────────────────────────────────────
+.env
+.env.*
+!.env.example
+*.pfx
+*.key
+secrets.json
+appsettings.*.local.json
+
+# ──────────────────────────────────────────────────────────────
+# Editors (keep workspace settings minimal)
+# ──────────────────────────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/extensions.json
+!.vscode/launch.json
+!.vscode/tasks.json
+*.swp
+*.swo
+
+# ──────────────────────────────────────────────────────────────
+# Misc
+# ──────────────────────────────────────────────────────────────
+*.tsbuildinfo
+.eslintcache
+*.p8
+image.png

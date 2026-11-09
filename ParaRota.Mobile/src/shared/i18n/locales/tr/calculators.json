@@ -1,0 +1,21 @@
+{
+  "page_eyebrow": "Türkiye'ye özgü araçlar",
+  "page_title": "Hesaplayıcılar",
+  "page_description": "Maaştan kiraya, kıdemden enflasyona; ihtiyacın olan hesaplar tek yerde.",
+  "open": "Aç",
+  "payroll_title": "Maaş",
+  "payroll_sub": "Brüt maaştan net ele geçeni ve işverene maliyeti hesapla.",
+  "payroll_tag": "brüt→net",
+  "severance_title": "Kıdem & İhbar",
+  "severance_sub": "Çalışma süresine göre kıdem ve ihbar tazminatı.",
+  "severance_tag": "tazminat",
+  "rent_title": "Kira Artışı",
+  "rent_sub": "Yasal azami kira artışı — TÜFE 12 aylık ortalama (TBK m.344).",
+  "rent_tag": "TBK m.344",
+  "inflation_title": "Paranın Değeri",
+  "inflation_sub": "Geçmişteki bir tutarın bugünkü alım gücü.",
+  "inflation_tag": "TÜFE",
+  "loan_title": "Kredi Maliyeti",
+  "loan_sub": "Faiz + KKDF + BSMV dahil gerçek maliyet ve yıllık oran.",
+  "loan_tag": "KKDF+BSMV"
+}

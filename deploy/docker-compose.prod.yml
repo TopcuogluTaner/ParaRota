@@ -1,0 +1,90 @@
+name: pararota
+
+services:
+  postgres:
+    image: postgres:16
+    container_name: pararota-postgres
+    restart: unless-stopped
+    environment:
+      POSTGRES_DB: ${POSTGRES_DB}
+      POSTGRES_USER: ${POSTGRES_USER}
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - pgdata:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U $${POSTGRES_USER} -d $${POSTGRES_DB}"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
+    networks: [backend]
+    # Host'a port AÇILMAZ — sadece docker network içinden erişilir (güvenlik).
+
+  api:
+    build:
+      context: ../ParaRota.Backend
+      dockerfile: Dockerfile
+    image: pararota-api:latest
+    container_name: pararota-api
+    restart: unless-stopped
+    depends_on:
+      postgres:
+        condition: service_healthy
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      ASPNETCORE_HTTP_PORTS: "8080"
+      # Sunucu yerel saati = Türkiye. Kod sözleşmesi DateTime.Now (UtcNow değil) ve
+      # Hangfire cron'ları "server local" varsayar; TZ verilmezse container UTC kalır
+      # (digest'ler 3 saat geç, ay başı/sonu sınırları kayar). Bkz. backend CLAUDE.md.
+      TZ: Europe/Istanbul
+      AppSettings__Environment: PROD
+      EnvConfig__PROD__ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}"
+      ConnectionStrings__DefaultConnection: "Host=postgres;Port=5432;Database=${POSTGRES_DB};Username=${POSTGRES_USER};Password=${POSTGRES_PASSWORD}"
+      Jwt__SigningKey: ${JWT_SIGNING_KEY}
+      Smtp__Host: ${SMTP_HOST:-smtp.resend.com}
+      Smtp__Port: ${SMTP_PORT:-587}
+      Smtp__UseStartTls: ${SMTP_USE_STARTTLS:-true}
+      Smtp__UserName: ${SMTP_USERNAME:-resend}
+      Smtp__Password: ${SMTP_PASSWORD}
+      Smtp__SenderEmail: ${SMTP_SENDER_EMAIL:-noreply@pararotam.com}
+      Smtp__SenderName: ${SMTP_SENDER_NAME:-ParaRota}
+      AzureDocumentIntelligence__ApiKey: ${AZURE_DI_APIKEY}
+      Gemini__ApiKey: ${GEMINI_API_KEY}
+      Gemini__Model: ${GEMINI_MODEL:-gemini-2.5-flash-lite}
+      App__WebBaseUrl: ${WEB_BASE_URL}
+      Cors__AllowedOrigins__0: ${WEB_ORIGIN_1}
+      Cors__AllowedOrigins__1: ${WEB_ORIGIN_2}
+    networks: [backend]
+    # Host'a port AÇILMAZ — nginx üzerinden proxy'lenir.
+
+  nginx:
+    image: nginx:1.27-alpine
+    container_name: pararota-nginx
+    restart: unless-stopped
+    depends_on: [api]
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./nginx/conf.d:/etc/nginx/conf.d:ro
+      - certbot-etc:/etc/letsencrypt:ro
+      - certbot-www:/var/www/certbot
+    networks: [backend]
+
+  # DNS-01 ile Let's Encrypt sertifikası — sadece elle çağrılır:
+  #   docker compose --profile tools run --rm certbot certonly ...
+  certbot:
+    image: certbot/dns-cloudflare:latest
+    container_name: pararota-certbot
+    profiles: ["tools"]
+    volumes:
+      - certbot-etc:/etc/letsencrypt
+      - certbot-www:/var/www/certbot
+      - ./secrets/cloudflare.ini:/secrets/cloudflare.ini:ro
+
+volumes:
+  pgdata:
+  certbot-etc:
+  certbot-www:
+
+networks:
+  backend:

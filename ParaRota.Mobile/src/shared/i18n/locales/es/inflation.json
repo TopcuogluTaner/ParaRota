@@ -1,0 +1,21 @@
+{
+  "title": "Valor del dinero",
+  "eyebrow": "IPC · 2003=100",
+  "amountLabel": "Importe",
+  "fromLabel": "De qué fecha",
+  "toLabel": "Comparado con",
+  "toToday": "Hoy",
+  "toCustom": "Fecha personalizada",
+  "calculate": "Calcular",
+  "liveHint": "Cambia la fecha o el importe, el resultado se actualiza al instante.",
+  "emptyTitle": "El resultado aparecerá aquí",
+  "emptyHint": "Escribe un importe y elige una fecha de inicio.",
+  "result_eyebrow": "Importe equivalente",
+  "result_caption": "{{from}} · {{amount}}  →  {{to}}",
+  "result_input": "Importe introducido · {{date}}",
+  "result_cumulative": "Inflación total",
+  "result_annual": "Promedio anual",
+  "result_multiplier": "Multiplicador de valor",
+  "provisionalWarning": "El mes final elegido aún no se ha publicado; se usaron los últimos datos de {{date}}.",
+  "source": "Fuente: TÜİK / TCMB EVDS · IPC (2003=100). Las publicaciones pueden retrasarse unos meses."
+}

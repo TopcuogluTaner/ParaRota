@@ -1,0 +1,21 @@
+{
+  "page_eyebrow": "Herramientas para Turquía",
+  "page_title": "Calculadoras",
+  "page_description": "Del salario al alquiler, de la indemnización a la inflación; los cálculos que necesitas, en un solo lugar.",
+  "open": "Abrir",
+  "payroll_title": "Salario",
+  "payroll_sub": "Neto a partir del salario bruto y el coste para el empleador.",
+  "payroll_tag": "bruto→neto",
+  "severance_title": "Indemnización y preaviso",
+  "severance_sub": "Indemnización y preaviso según la antigüedad.",
+  "severance_tag": "indemnización",
+  "rent_title": "Aumento de alquiler",
+  "rent_sub": "Aumento máximo legal — promedio del IPC de 12 meses (Cód. de Obligaciones turco art. 344).",
+  "rent_tag": "art. 344",
+  "inflation_title": "Valor del dinero",
+  "inflation_sub": "Poder adquisitivo actual de un importe del pasado.",
+  "inflation_tag": "IPC",
+  "loan_title": "Coste del crédito",
+  "loan_sub": "Coste real y tasa anual con interés + KKDF + BSMV.",
+  "loan_tag": "KKDF+BSMV"
+}

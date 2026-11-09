@@ -1,0 +1,21 @@
+{
+  "title": "Wert des Geldes",
+  "eyebrow": "VPI · 2003=100",
+  "amountLabel": "Betrag",
+  "fromLabel": "Von wann",
+  "toLabel": "Im Vergleich zu",
+  "toToday": "Heute",
+  "toCustom": "Eigenes Datum",
+  "calculate": "Berechnen",
+  "liveHint": "Ändere Datum oder Betrag, das Ergebnis aktualisiert sich sofort.",
+  "emptyTitle": "Das Ergebnis erscheint hier",
+  "emptyHint": "Gib einen Betrag ein und wähle ein Startdatum.",
+  "result_eyebrow": "Entsprechender Betrag",
+  "result_caption": "{{from}} · {{amount}}  →  {{to}}",
+  "result_input": "Eingegebener Betrag · {{date}}",
+  "result_cumulative": "Gesamtinflation",
+  "result_annual": "Jahresdurchschnitt",
+  "result_multiplier": "Wertfaktor",
+  "provisionalWarning": "Dein gewählter Endmonat ist noch nicht veröffentlicht; die neuesten Daten von {{date}} wurden verwendet.",
+  "source": "Quelle: TÜİK / TCMB EVDS · VPI (2003=100). Veröffentlichungen können sich um einige Monate verzögern."
+}

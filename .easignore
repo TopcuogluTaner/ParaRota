@@ -1,0 +1,44 @@
+# DİKKAT: .easignore varken EAS .gitignore'u YOK SAYAR — gitignore'daki
+# her şey burada da olmalı, yoksa arşive girer.
+
+# Build için gereksiz proje parçaları (sadece ParaRota.Mobile derleniyor)
+ParaRota.Backend/
+ParaRota.Web/
+docs/
+deploy/
+*.md
+.claude/
+.github/
+
+# gitignore karşılıkları — bağımlılıklar ve üretilen çıktılar
+**/node_modules/
+**/.expo/
+**/dist/
+**/web-build/
+**/.kotlin/
+**/.cache/
+**/coverage/
+ParaRota.Mobile/android/
+ParaRota.Mobile/ios/
+ParaRota.Mobile/expo-env.d.ts
+
+# Gizli/anahtar dosyaları
+**/*.jks
+**/*.p8
+**/*.p12
+**/*.key
+**/*.mobileprovision
+**/*.pem
+**/.env*.local
+
+# Mobil içindeki mağaza görselleri (uygulama kodunda referans yok)
+ParaRota.Mobile/assets/EkranResimleri/
+ParaRota.Mobile/assets/PararotamLogo.png
+ParaRota.Mobile/assets/play-*.png
+ParaRota.Mobile/assets/play-*.jpg
+
+# Standart gereksizler
+**/.DS_Store
+**/*.log
+**/*.tsbuildinfo
+image.png

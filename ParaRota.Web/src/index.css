@@ -1,0 +1,174 @@
+/* ──────────────────────────────────────────────────────────
+   ParaRotam — Cartographic Finance design system
+   Tokens live here as CSS vars; MUI theme reads palette via JS.
+   ────────────────────────────────────────────────────────── */
+
+:root {
+  /* Light: warm parchment + deep ink */
+  --pr-bg: #F4ECDA;
+  --pr-bg-alt: #ECE2C9;
+  --pr-paper: #FBF5E5;
+  --pr-paper-2: #F8EFD8;
+  --pr-ink: #1B130A;
+  --pr-ink-soft: #4F4537;
+  --pr-ink-mute: #8A7D67;
+  --pr-line: #DCCFB0;
+  --pr-line-strong: #C9B98F;
+
+  /* Route signals — go (income), waypoint (attention), halt (expense/debt) */
+  --pr-go: #0F8B6C;          /* deep emerald */
+  --pr-go-soft: #1FB585;
+  --pr-go-glow: rgba(31, 181, 133, 0.18);
+  --pr-way: #B7651C;         /* burnt saffron */
+  --pr-way-soft: #D58A36;
+  --pr-halt: #B0341E;        /* oxidized red */
+  --pr-halt-soft: #D8543B;
+  --pr-sky: #1E5F8A;         /* admiral blue */
+  --pr-sky-soft: #3F87B4;
+
+  --pr-shadow-sm: 0 1px 2px rgba(43, 30, 14, 0.06), 0 1px 1px rgba(43, 30, 14, 0.04);
+  --pr-shadow-md: 0 4px 14px rgba(43, 30, 14, 0.08), 0 2px 4px rgba(43, 30, 14, 0.05);
+  --pr-shadow-lg: 0 18px 40px rgba(43, 30, 14, 0.14), 0 8px 16px rgba(43, 30, 14, 0.08);
+  --pr-shadow-glow-go: 0 0 0 1px rgba(15, 139, 108, 0.18), 0 8px 24px rgba(15, 139, 108, 0.16);
+
+  --pr-radius-sm: 8px;
+  --pr-radius: 14px;
+  --pr-radius-lg: 22px;
+
+  /* Topographic vellum overlay */
+  --pr-topo-opacity: 0.5;
+
+  color-scheme: light;
+}
+
+[data-theme='dark'] {
+  --pr-bg: #08090F;
+  --pr-bg-alt: #0C0E16;
+  --pr-paper: #11141E;
+  --pr-paper-2: #161A26;
+  --pr-ink: #F2E7CC;
+  --pr-ink-soft: #C2B496;
+  --pr-ink-mute: #7B7158;
+  --pr-line: #1E2231;
+  --pr-line-strong: #2A2F44;
+
+  --pr-go: #2EC998;
+  --pr-go-soft: #5BDFB4;
+  --pr-go-glow: rgba(46, 201, 152, 0.22);
+  --pr-way: #E0A246;
+  --pr-way-soft: #F1B96A;
+  --pr-halt: #EF6B4F;
+  --pr-halt-soft: #F58E76;
+  --pr-sky: #5BA3D0;
+  --pr-sky-soft: #82BEDF;
+
+  --pr-shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.4);
+  --pr-shadow-md: 0 8px 22px rgba(0, 0, 0, 0.45), 0 2px 6px rgba(0, 0, 0, 0.25);
+  --pr-shadow-lg: 0 28px 60px rgba(0, 0, 0, 0.55), 0 10px 22px rgba(0, 0, 0, 0.35);
+  --pr-shadow-glow-go: 0 0 0 1px rgba(46, 201, 152, 0.25), 0 12px 36px rgba(46, 201, 152, 0.2);
+
+  --pr-topo-opacity: 0.18;
+  color-scheme: dark;
+}
+
+* ,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+  margin: 0;
+}
+
+body {
+  font-family: 'Geist', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  font-feature-settings: 'cv11', 'ss01', 'ss03';
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background: var(--pr-bg);
+  color: var(--pr-ink);
+  position: relative;
+}
+
+#root {
+  position: relative;
+  /* z-index BİLEREK yok: 'z-index:1' #root'ta bir stacking context yaratıp içerideki
+     (body'ye portallanmamış) fixed katmanları hapsediyordu — toast/dock bu yüzden modalların
+     arkasında kalıyordu. position:relative tek başına stacking context yaratmaz. */
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+}
+
+/* Tabular numbers — used everywhere a money value renders */
+.pr-num {
+  font-family: 'Geist Mono', ui-monospace, 'SF Mono', Menlo, monospace;
+  font-variant-numeric: tabular-nums;
+  letter-spacing: -0.01em;
+}
+
+/* Display serif utility */
+.pr-display {
+  font-family: 'Fraunces', 'Iowan Old Style', Georgia, serif;
+  font-optical-sizing: auto;
+  letter-spacing: -0.02em;
+}
+
+/* Hand-drawn caps decorative — for chapter headings */
+.pr-eyebrow {
+  font-family: 'Geist Mono', monospace;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  font-size: 0.72rem;
+  color: var(--pr-ink-mute);
+  font-weight: 500;
+}
+
+/* Selection */
+::selection {
+  background: var(--pr-go-glow);
+  color: var(--pr-ink);
+}
+
+/* Subtle horizontal "route line" */
+.pr-route-line {
+  background-image: linear-gradient(
+    to right,
+    transparent 0,
+    transparent 4px,
+    var(--pr-line-strong) 4px,
+    var(--pr-line-strong) 8px
+  );
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  height: 1px;
+}
+
+@keyframes pr-glide-in {
+  from { opacity: 0; transform: translateY(12px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes pr-pulse-soft {
+  0%, 100% { transform: scale(1); opacity: 0.85; }
+  50%      { transform: scale(1.08); opacity: 1; }
+}
+
+@keyframes pr-shimmer {
+  0% { background-position: -200% 0; }
+  100% { background-position: 200% 0; }
+}
+
+/* ──────────────────────────────────────────────────────────
+   Overlay katman sırası — toast + SweetAlert HER ZAMAN modalların üstünde.
+   MUI z-index: modal 1300, snackbar 1400, tooltip 1500. Bunların hepsinin
+   üstüne çıkarıyoruz ki açık bir modalın arkasında silik kalmasınlar.
+   (react-hot-toast container'ı Toaster containerStyle ile 13000'e set edilir.)
+   ────────────────────────────────────────────────────────── */
+.swal2-container {
+  z-index: 13050 !important;
+}

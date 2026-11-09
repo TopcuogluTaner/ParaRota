@@ -1,0 +1,68 @@
+{
+  "eyebrow": "PREMIUM",
+  "title": "ParaRotam Premium",
+  "subtitle": "Desbloquea 4 funciones avanzadas.",
+  "locked": {
+    "headerTitle": "Premium",
+    "eyebrow": "FUNCIÓN PREMIUM"
+  },
+  "features": {
+    "investments": {
+      "title": "Inversiones y Cartera",
+      "desc": "Sigue oro, divisas, cripto y acciones en un solo lugar."
+    },
+    "receipts": {
+      "title": "Escaneo de Recibos",
+      "desc": "Fotografía el recibo y crea el gasto automáticamente."
+    },
+    "household": {
+      "title": "Familia / Presupuesto compartido",
+      "desc": "Comparte tu presupuesto con la familia y gestiónenlo juntos."
+    },
+    "generic": {
+      "title": "Función Premium",
+      "desc": "Esta función requiere una suscripción premium."
+    },
+    "ai": {
+      "title": "Asistente IA",
+      "desc": "Añade registros escribiendo; la IA lee tu mes."
+    }
+  },
+  "trial": {
+    "daysLeft": "{{count}} días restantes de prueba"
+  },
+  "cta": {
+    "unlock": "Hazte Premium",
+    "subscribe": "Suscribirse",
+    "restore": "Restaurar Compras",
+    "checkStatus": "Comprobar mi suscripción",
+    "close": "Cerrar"
+  },
+  "plan": {
+    "monthly": "Mensual",
+    "yearly": "Anual",
+    "bestValue": "MEJOR VALOR · ~33% DESC.",
+    "staticHint": "₺99,99/mes · ₺799,99/año",
+    "selected": "Seleccionado"
+  },
+  "empty": {
+    "noOffering": "No se pudieron cargar los planes ahora, inténtalo más tarde.",
+    "unavailable": "Las compras no están disponibles en esta versión."
+  },
+  "legal": {
+    "autoRenew": "La suscripción se renueva automáticamente. Si no se cancela al menos 24 h antes del fin del período, se renueva al mismo precio. Puedes cancelar cuando quieras desde tu cuenta de la tienda.",
+    "terms": "Términos de suscripción",
+    "privacy": "Privacidad"
+  },
+  "toast": {
+    "purchaseSuccess": "¡Premium activo! Gracias.",
+    "purchaseFailed": "No se pudo completar la compra.",
+    "restoreSuccess": "Tus compras se restauraron.",
+    "restoreEmpty": "No se encontró una suscripción activa para restaurar.",
+    "restoreFailed": "Error al restaurar.",
+    "statusNotPremium": "No se encontró una suscripción activa. Si te suscribiste en la app móvil, asegúrate de iniciar sesión aquí con la misma cuenta."
+  },
+  "mobileOnly": {
+    "notice": "Puedes iniciar tu suscripción Premium en la app móvil de ParaRotam (App Store / Google Play). Al iniciar sesión con la misma cuenta, premium se aplica automáticamente en todos tus dispositivos, incluida la web."
+  }
+}

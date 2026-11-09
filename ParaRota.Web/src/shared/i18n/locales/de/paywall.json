@@ -1,0 +1,68 @@
+{
+  "eyebrow": "PREMIUM",
+  "title": "ParaRotam Premium",
+  "subtitle": "Schalte 4 erweiterte Funktionen frei.",
+  "locked": {
+    "headerTitle": "Premium",
+    "eyebrow": "PREMIUM-FUNKTION"
+  },
+  "features": {
+    "investments": {
+      "title": "Investitionen & Portfolio",
+      "desc": "Verfolge Gold, Währungen, Krypto und Aktien an einem Ort."
+    },
+    "receipts": {
+      "title": "Beleg-Scan",
+      "desc": "Beleg fotografieren, Ausgabe wird automatisch erstellt."
+    },
+    "household": {
+      "title": "Familie / Gemeinsames Budget",
+      "desc": "Teile dein Budget mit der Familie und verwaltet es gemeinsam."
+    },
+    "generic": {
+      "title": "Premium-Funktion",
+      "desc": "Diese Funktion erfordert ein Premium-Abonnement."
+    },
+    "ai": {
+      "title": "KI-Assistent",
+      "desc": "Einträge per Text hinzufügen; die KI liest deinen Monat."
+    }
+  },
+  "trial": {
+    "daysLeft": "Noch {{count}} Tage in der Testphase"
+  },
+  "cta": {
+    "unlock": "Premium holen",
+    "subscribe": "Abonnieren",
+    "restore": "Käufe wiederherstellen",
+    "checkStatus": "Abo prüfen",
+    "close": "Schließen"
+  },
+  "plan": {
+    "monthly": "Monatlich",
+    "yearly": "Jährlich",
+    "bestValue": "BESTER WERT · ~33% RABATT",
+    "staticHint": "₺99,99/Mon. · ₺799,99/Jahr",
+    "selected": "Ausgewählt"
+  },
+  "empty": {
+    "noOffering": "Pläne konnten nicht geladen werden, bitte später erneut versuchen.",
+    "unavailable": "Käufe sind in diesem Build nicht verfügbar."
+  },
+  "legal": {
+    "autoRenew": "Das Abonnement verlängert sich automatisch. Wird es nicht mindestens 24 Std. vor Ablauf gekündigt, verlängert es sich zum gleichen Preis. Du kannst jederzeit über dein Store-Konto kündigen.",
+    "terms": "Abo-Bedingungen",
+    "privacy": "Datenschutz"
+  },
+  "toast": {
+    "purchaseSuccess": "Premium aktiv! Danke.",
+    "purchaseFailed": "Kauf konnte nicht abgeschlossen werden.",
+    "restoreSuccess": "Deine Käufe wurden wiederhergestellt.",
+    "restoreEmpty": "Kein aktives Abo zum Wiederherstellen gefunden.",
+    "restoreFailed": "Wiederherstellung fehlgeschlagen.",
+    "statusNotPremium": "Kein aktives Abo gefunden. Falls du in der App abonniert hast, melde dich hier mit demselben Konto an."
+  },
+  "mobileOnly": {
+    "notice": "Du kannst dein Premium-Abo in der ParaRotam-App starten (App Store / Google Play). Wenn du dich mit demselben Konto anmeldest, gilt Premium automatisch auf allen Geräten, auch im Web."
+  }
+}

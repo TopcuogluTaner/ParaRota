@@ -1,0 +1,21 @@
+{
+  "title": "Money's Value",
+  "eyebrow": "CPI · 2003=100",
+  "amountLabel": "Amount",
+  "fromLabel": "When was it",
+  "toLabel": "Compared to",
+  "toToday": "Today",
+  "toCustom": "Custom date",
+  "calculate": "Calculate",
+  "liveHint": "Change the date or amount, the result updates instantly.",
+  "emptyTitle": "The result will appear here",
+  "emptyHint": "Enter an amount and pick a starting date.",
+  "result_eyebrow": "Equivalent amount",
+  "result_caption": "{{from}} · {{amount}}  →  {{to}}",
+  "result_input": "Entered amount · {{date}}",
+  "result_cumulative": "Total inflation",
+  "result_annual": "Annual average",
+  "result_multiplier": "Value multiplier",
+  "provisionalWarning": "Your chosen end month isn't published yet; the latest {{date}} data was used.",
+  "source": "Source: TÜİK / CBRT EVDS · CPI (2003=100). Releases can lag by a few months."
+}

@@ -1,0 +1,16 @@
+{
+  "title": "Rent Increase",
+  "eyebrow": "CPI · 12-Month Average",
+  "rentLabel": "Current monthly rent",
+  "renewalLabel": "Contract renewal month",
+  "calculate": "Calculate",
+  "perMonth": "/mo",
+  "emptyHint": "Type your current rent and pick the renewal month — we'll calculate the legal maximum increase from official TurkStat CPI data.",
+  "result_maxRent": "New rent ceiling",
+  "result_current": "Current rent",
+  "result_increase": "Maximum increase",
+  "result_reference": "Reference CPI data",
+  "provisionalWarning": "CPI for the month before renewal hasn't been published yet — showing the latest available data. The final rate is set once TurkStat publishes new data.",
+  "note": "Turkish Code of Obligations art. 344: rent increases cannot exceed the 12-month average CPI change of the previous rental year. This calculation is for information only; check your contract and current legislation.",
+  "result_yearly": "Yearly difference"
+}

@@ -1,0 +1,68 @@
+{
+  "eyebrow": "PREMIUM",
+  "title": "ParaRotam Premium",
+  "subtitle": "Unlock 4 advanced features.",
+  "locked": {
+    "headerTitle": "Premium",
+    "eyebrow": "PREMIUM FEATURE"
+  },
+  "features": {
+    "investments": {
+      "title": "Investments & Portfolio",
+      "desc": "Track gold, currencies, crypto and stocks in one place."
+    },
+    "receipts": {
+      "title": "Receipt Scanning",
+      "desc": "Snap a receipt, create the expense automatically."
+    },
+    "household": {
+      "title": "Family / Shared Budget",
+      "desc": "Share your budget with family and manage it together."
+    },
+    "generic": {
+      "title": "Premium Feature",
+      "desc": "This feature requires a premium subscription."
+    },
+    "ai": {
+      "title": "AI Assistant",
+      "desc": "Add records by typing; let AI read your month."
+    }
+  },
+  "trial": {
+    "daysLeft": "{{count}} days left in trial"
+  },
+  "cta": {
+    "unlock": "Go Premium",
+    "subscribe": "Subscribe",
+    "restore": "Restore Purchases",
+    "checkStatus": "Check my subscription",
+    "close": "Close"
+  },
+  "plan": {
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "bestValue": "BEST VALUE · ~33% OFF",
+    "staticHint": "₺99.99/mo · ₺799.99/yr",
+    "selected": "Selected"
+  },
+  "empty": {
+    "noOffering": "Plans couldn't be loaded right now, please try again later.",
+    "unavailable": "Purchases are unavailable in this build."
+  },
+  "legal": {
+    "autoRenew": "Subscription renews automatically. Unless cancelled at least 24h before the period ends, it renews at the same price. You can cancel anytime from your store account.",
+    "terms": "Subscription Terms",
+    "privacy": "Privacy"
+  },
+  "toast": {
+    "purchaseSuccess": "Premium active! Thank you.",
+    "purchaseFailed": "Purchase could not be completed.",
+    "restoreSuccess": "Your purchases were restored.",
+    "restoreEmpty": "No active subscription found to restore.",
+    "restoreFailed": "Restore failed.",
+    "statusNotPremium": "No active subscription found. If you subscribed in the mobile app, make sure you are signed in with the same account here."
+  },
+  "mobileOnly": {
+    "notice": "You can start your Premium subscription in the ParaRotam mobile app (App Store / Google Play). Once you sign in with the same account, premium automatically applies on all your devices, including the web."
+  }
+}

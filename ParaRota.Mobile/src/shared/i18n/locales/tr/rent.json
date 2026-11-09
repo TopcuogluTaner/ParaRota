@@ -1,0 +1,16 @@
+{
+  "title": "Kira Artışı",
+  "eyebrow": "TÜFE · 12 Aylık Ortalama",
+  "rentLabel": "Mevcut aylık kira",
+  "renewalLabel": "Sözleşme yenileme ayı",
+  "calculate": "Hesapla",
+  "perMonth": "/ay",
+  "emptyHint": "Mevcut kiranı yaz, sözleşmenin yenilendiği ayı seç — yasal azami artışı TÜİK TÜFE verisiyle saniyede hesaplayalım.",
+  "result_maxRent": "Yeni kira üst sınırı",
+  "result_current": "Mevcut kira",
+  "result_increase": "Azami artış",
+  "result_reference": "Referans TÜFE verisi",
+  "provisionalWarning": "Yenileme ayından önceki ayın TÜFE'si henüz açıklanmadı — en son açıklanan veri gösteriliyor. Kesin oran, TÜİK yeni veriyi açıklayınca netleşir.",
+  "note": "TBK m.344: konut ve çatılı işyeri kiralarında artış, bir önceki kira yılına ait TÜFE on iki aylık ortalamalara göre değişim oranını geçemez. Bu hesap bilgilendirme amaçlıdır; sözleşmeni ve güncel mevzuatı kontrol et.",
+  "result_yearly": "Yıllık fark"
+}

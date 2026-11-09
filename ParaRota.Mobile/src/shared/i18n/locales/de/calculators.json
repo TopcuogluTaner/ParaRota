@@ -1,0 +1,21 @@
+{
+  "page_eyebrow": "Für die Türkei gemacht",
+  "page_title": "Rechner",
+  "page_description": "Von Gehalt bis Miete, Abfindung bis Inflation; die Berechnungen, die du brauchst, an einem Ort.",
+  "open": "Öffnen",
+  "payroll_title": "Gehalt",
+  "payroll_sub": "Netto vom Bruttogehalt und die Kosten für den Arbeitgeber.",
+  "payroll_tag": "brutto→netto",
+  "severance_title": "Abfindung & Kündigung",
+  "severance_sub": "Abfindung und Kündigungsentgelt nach Betriebszugehörigkeit.",
+  "severance_tag": "Abfindung",
+  "rent_title": "Mieterhöhung",
+  "rent_sub": "Gesetzliche Höchstmiete — 12-Monats-VPI-Durchschnitt (türk. OR Art. 344).",
+  "rent_tag": "OR Art. 344",
+  "inflation_title": "Wert des Geldes",
+  "inflation_sub": "Heutige Kaufkraft eines früheren Betrags.",
+  "inflation_tag": "VPI",
+  "loan_title": "Kreditkosten",
+  "loan_sub": "Echte Kosten und Jahressatz inkl. Zins + KKDF + BSMV.",
+  "loan_tag": "KKDF+BSMV"
+}

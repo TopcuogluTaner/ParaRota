@@ -1,0 +1,70 @@
+{
+  "eyebrow": "PREMIUM",
+  "title": "ParaRota Premium",
+  "subtitle": "4 gelişmiş özelliğin kilidini aç.",
+  "locked": {
+    "headerTitle": "Premium",
+    "eyebrow": "PREMIUM ÖZELLİK"
+  },
+  "features": {
+    "investments": {
+      "title": "Yatırımlar & Portföy",
+      "desc": "Altın, döviz, kripto ve hisseni tek yerde izle."
+    },
+    "receipts": {
+      "title": "Fiş Tarama",
+      "desc": "Fişi fotoğrafla, harcama otomatik oluşsun."
+    },
+    "household": {
+      "title": "Aile / Ortak Bütçe",
+      "desc": "Bütçeni ailenle paylaş, birlikte yönet."
+    },
+    "generic": {
+      "title": "Premium Özellik",
+      "desc": "Bu özellik premium üyelik gerektirir."
+    },
+    "ai": {
+      "title": "AI Asistan",
+      "desc": "Yazarak kayıt ekle, ayını AI yorumlasın."
+    }
+  },
+  "trial": {
+    "daysLeft": "Deneme bitişine {{count}} gün"
+  },
+  "cta": {
+    "unlock": "Premium'a Geç",
+    "subscribe": "Abone Ol",
+    "restore": "Satın Alımları Geri Yükle"
+  },
+  "plan": {
+    "monthly": "Aylık",
+    "yearly": "Yıllık",
+    "bestValue": "EN İYİ DEĞER · ~%33 İNDİRİM",
+    "staticHint": "Aylık ₺99,99 · Yıllık ₺799,99",
+    "selected": "Seçili",
+    "perMonthEquiv": "≈ {{price}}/ay",
+    "staticMonthlyPrice": "₺99,99",
+    "staticYearlyPrice": "₺799,99",
+    "staticYearlyEquiv": "₺67"
+  },
+  "empty": {
+    "noOffering": "Şu an plan bilgisi alınamadı, lütfen daha sonra tekrar deneyin.",
+    "unavailable": "Satın alma bu derlemede kullanılamıyor."
+  },
+  "legal": {
+    "autoRenew": "Abonelik otomatik yenilenir. Dönem bitiminden en az 24 saat önce iptal etmezsen aynı ücretle yenilenir. Mağaza hesabından istediğin zaman iptal edebilirsin.",
+    "terms": "Abonelik Şartları",
+    "privacy": "Gizlilik"
+  },
+  "toast": {
+    "purchaseSuccess": "Premium aktif! Teşekkürler.",
+    "purchaseFailed": "Satın alma tamamlanamadı.",
+    "restoreSuccess": "Satın alımların geri yüklendi.",
+    "restoreEmpty": "Geri yüklenecek aktif abonelik bulunamadı.",
+    "restoreFailed": "Geri yükleme başarısız."
+  },
+  "entry": {
+    "active": "Premium aktif",
+    "expired": "Deneme bitti — premium özellikler kilitli"
+  }
+}

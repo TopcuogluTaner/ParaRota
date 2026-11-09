@@ -1,0 +1,16 @@
+{
+  "title": "Mieterhöhung",
+  "eyebrow": "VPI · 12-Monats-Durchschnitt",
+  "rentLabel": "Aktuelle Monatsmiete",
+  "renewalLabel": "Monat der Vertragsverlängerung",
+  "calculate": "Berechnen",
+  "perMonth": "/Monat",
+  "emptyHint": "Gib deine aktuelle Miete ein und wähle den Verlängerungsmonat — wir berechnen die gesetzliche Höchsterhöhung aus offiziellen TÜIK-VPI-Daten.",
+  "result_maxRent": "Neue Mietobergrenze",
+  "result_current": "Aktuelle Miete",
+  "result_increase": "Maximale Erhöhung",
+  "result_reference": "Referenz-VPI-Daten",
+  "provisionalWarning": "Der VPI des Vormonats der Verlängerung wurde noch nicht veröffentlicht — gezeigt werden die neuesten verfügbaren Daten. Der endgültige Satz steht fest, sobald TÜIK neue Daten veröffentlicht.",
+  "note": "Türk. Obligationenrecht Art. 344: Mieterhöhungen dürfen die 12-Monats-Durchschnittsänderung des VPI des Vorjahres nicht überschreiten. Diese Berechnung dient nur der Information; prüfe Vertrag und aktuelle Gesetzgebung.",
+  "result_yearly": "Jährliche Differenz"
+}
